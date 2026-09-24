@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dashboard - Home Sweet Home</title>
+        <!-- Font Awesome para os ícones -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <!-- Barra de Navegação -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3 mb-4">
+            <a class="navbar-brand" href="#">Home Sweet Home</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="history.html">History</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Conteúdo do Dashboard (Cartões) -->
+        <div class="container-fluid px-4">
+            <div class="row">
+                <!-- Cartão: Kitchen -->
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-header text-center fw-bold fs-5">Kitchen</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span><i class="fa-solid fa-temperature-half text-success me-1"></i> <strong>Temperature</strong></span>
+                                    <span>21.6 °C</span>
+                                </li>
+                                <li class="text-muted mb-2">5 minutes ago</li>
+                                
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span><i class="fa-regular fa-lightbulb me-1"></i> <strong>Lights</strong></span>
+                                    <span class="text-danger">Off</span>
+                                </li>
+                                <li class="text-muted mb-2">10 minutes ago</li>
+                                
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span><i class="fa-regular fa-eye text-secondary me-1"></i> <strong>West Window</strong></span>
+                                    <span class="text-success">Open</span>
+                                </li>
+                                <li class="text-muted mb-2">15 minutes ago</li>
+                                
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span><i class="fa-regular fa-eye text-secondary me-1"></i> <strong>North Window</strong></span>
+                                    <span class="text-success">Open</span>
+                                </li>
+                                <li class="text-muted">15 minutes ago</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartão: Living Room -->
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-header text-center fw-bold fs-5">Living Room</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span><i class="fa-solid fa-temperature-half text-danger me-1"></i> <strong>Temperature</strong></span>
+                                    <span>22.6 °C</span>
+                                </li>
+                                <li class="text-muted mb-2">5 minutes ago</li>
+                                
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span><i class="fa-regular fa-lightbulb me-1"></i> <strong>Ceiling Lights</strong></span>
+                                    <span class="text-danger">Off</span>
+                                </li>
+                                <li class="text-muted mb-2">7 minutes ago</li>
+                                
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span><i class="fa-solid fa-lightbulb text-warning me-1"></i> <strong>Ambient Lights</strong></span>
+                                    <span class="text-success">On</span>
+                                </li>
+                                <li class="text-muted mb-2">7 minutes ago</li>
+                                
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span><i class="fa-solid fa-music text-primary me-1"></i> <strong>Ambient Music</strong></span>
+                                    <span class="text-success">On</span>
+                                </li>
+                                <li class="text-muted">17 minutes ago</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartão: Clock -->
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-header text-center fw-bold fs-5">Clock</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span><i class="fa-regular fa-clock text-primary me-1"></i> <strong>Time</strong></span>
+                                    <span>22:30</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span><i class="fa-regular fa-calendar-days me-1"></i> <strong>Date</strong></span>
+                                    <span>2018-09-18</span>
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-sun text-warning me-1"></i> <strong>Sunrise / Sunset above horizon</strong></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
